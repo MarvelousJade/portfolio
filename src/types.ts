@@ -1,9 +1,11 @@
 export enum LinkImageSource {
+  Roblox = "/images/logos/roblox.svg",
   Github = "/images/logos/github.png",
   ItchIo = "/images/logos/itch.io.png",
 }
 
 export enum Platform {
+  Roblox = "Roblox",
   Windows = "Windows",
   Mac = "Mac",
   Linux = "Linux",
@@ -13,6 +15,7 @@ export enum Platform {
 }
 
 export enum GameEngine {
+  Roblox = "Roblox Studio (Luau)",
   Unreal = "Unreal",
   Unity = "Unity",
   SDL2 = "SDL2",

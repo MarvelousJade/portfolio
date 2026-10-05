@@ -48,7 +48,9 @@ const LogoImage = styled.img<{ size: number }>`
 
 const LogoButton: React.FC<LogoProps> = ({ source, size, margin = 0, linkTo }) => {
   return (
-    <LogoContainer href={linkTo} target="_blank" rel="noopener noreferrer" size={size} margin={margin}>
+    <LogoContainer href={linkTo} target="_blank" rel="noopener noreferrer" size={size} margin={margin}
+      aria-label={source.endsWith('roblox.svg') ? 'Play on Roblox' : source.includes('github') ? 'View source on GitHub' : source.includes('itch.io') ? 'Play on itch.io' : 'Open profile'}
+      title={source.endsWith('roblox.svg') ? 'Play on Roblox' : undefined}>
       <LogoImage src={`${process.env.PUBLIC_URL}${source}`} alt="logo" size={size} />
     </LogoContainer>
   );

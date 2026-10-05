@@ -19,6 +19,21 @@ export const PersonalInfo: AboutMeData = {
 
 export const games: Game[] = [
   {
+    name: "Paper Skies",
+    description:
+      "A Roblox paper-plane exploration game. Glide through mountain valleys, collect gold, and unlock five aircraft with different speed, boost, and handling. Momentum-based flight features climbing, stall recovery, and rechargeable boost, backed by server-owned flight, validated purchases, and swept ring-crossing detection.",
+    genres: ["Exploration", "Flight", "Adventure"],
+    platforms: [Platform.Roblox],
+    engine: GameEngine.Roblox,
+    links: [
+      { source: LinkImageSource.Roblox, url: "https://www.roblox.com/games/90521540129558" },
+      { source: LinkImageSource.Github, url: "https://github.com/MarvelousJade/paper-skies" },
+    ],
+    media: [
+      { source: "https://www.youtube.com/embed/0x5LloIl2CA", type: MediaType.YouTube },
+    ],
+  },
+  {
     name: "BlackWood",
     description:
       "BlackWood is a first-person psychological horror game set in a small souvenir and antique shop. Built in Unreal Engine 5.6, it blends grounded retail-sim mechanics — serving customers, handling inventory, opening and closing the shop — with an unsettling narrative that unfolds across the workday. Visually it draws from the lo-fi, mundane-turned-sinister aesthetic of indie horror like Fears to Fathom.",
