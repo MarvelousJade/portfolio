@@ -25,7 +25,7 @@ export const games: Game[] = [
     genres: ["Arena Survival", "Action", "Roguelite"],
     platforms: [Platform.Web, Platform.Windows],
     engine: GameEngine.Unity,
-    accessNote: "Browser build currently requires access.",
+    accessNote: "Browser build currently requires access. Password: scrapshift",
     links: [
       { source: LinkImageSource.ItchIo, url: "https://marvelousjade.itch.io/scrap-shift" },
       { source: LinkImageSource.Github, url: "https://github.com/MarvelousJade/Scrapshift" },
