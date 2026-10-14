@@ -59,6 +59,12 @@ const LinksContainer = styled(Row)`
   gap: 10px;
 `;
 
+const AccessNote = styled.p`
+  margin: 12px 0 0;
+  color: silver;
+  font-size: 1rem;
+`;
+
 const GameInfo: React.FC<GameInfoProps> = ({ game }) => {
     return (
         <GameInfoContainer>
@@ -93,6 +99,7 @@ const GameInfo: React.FC<GameInfoProps> = ({ game }) => {
                     <LogoButton key={index} size={35} source={link.source} linkTo={link.url} />
                 ))}
             </LinksContainer>
+            {game.accessNote && <AccessNote>{game.accessNote}</AccessNote>}
         </GameInfoContainer>
     );
 };

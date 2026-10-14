@@ -19,6 +19,26 @@ export const PersonalInfo: AboutMeData = {
 
 export const games: Game[] = [
   {
+    name: "Scrapshift",
+    description:
+      "A Unity arena survival game with 20 waves, six-weapon builds, randomized shop and upgrade rewards, pets, and turrets. Built as a Brotato-inspired engineering study with browser and Windows releases, persistent unlocks, and automated gameplay tests.",
+    genres: ["Arena Survival", "Action", "Roguelite"],
+    platforms: [Platform.Web, Platform.Windows],
+    engine: GameEngine.Unity,
+    accessNote: "Browser build currently requires access.",
+    links: [
+      { source: LinkImageSource.ItchIo, url: "https://marvelousjade.itch.io/scrap-shift" },
+      { source: LinkImageSource.Github, url: "https://github.com/MarvelousJade/Scrapshift" },
+    ],
+    media: [
+      { source: "https://www.youtube.com/embed/vxglIsqjHaU", type: MediaType.YouTube },
+      { source: "/images/games/scrapshift/martial-monk.png", type: MediaType.Image },
+      { source: "/images/games/scrapshift/cyberpunk-ranger.png", type: MediaType.Image },
+      { source: "/images/games/scrapshift/auto-turret.png", type: MediaType.Image },
+      { source: "/images/games/scrapshift/druid-pets.png", type: MediaType.Image },
+    ],
+  },
+  {
     name: "Paper Skies",
     description:
       "A Roblox paper-plane exploration game. Glide through mountain valleys, collect gold, and unlock five aircraft with different speed, boost, and handling. Momentum-based flight features climbing, stall recovery, and rechargeable boost, backed by server-owned flight, validated purchases, and swept ring-crossing detection.",

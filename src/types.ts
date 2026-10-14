@@ -50,6 +50,7 @@ export interface Game {
   description: string;
   genres: string[];
   source?: { name: string; url: string };
+  accessNote?: string;
   links: { source: LinkImageSource; url: string }[];
   media: MediaItem[];
   platforms: Platform[];
